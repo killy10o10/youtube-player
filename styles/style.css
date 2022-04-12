@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+header {
+    background-color: bisque;
+    
+    /* justify-content: flex-end; */
+}
+
+.navbar-left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-middle{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: flex-end;
+    /* align-self: flex-end; */
+}
