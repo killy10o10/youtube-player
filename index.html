@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Microverse Pre-Enrollment Bootcamp HTML & CSS test">
     <meta name="keywords" content="Microverse, theOdinProject, HTML & CSS, Youtube Player">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <title>Youtube Player</title>
@@ -35,7 +35,65 @@
           </ul>  
         </nav> 
     </header>
-
-    
+    <main>
+      <!-- Sidebar Starts -->
+      <div class="sidebar">
+        <div class="sidebar-categories">
+          <div class="sidebar-category">
+            <i class="material-icons">home</i>
+            <span>Home</span>
+          </div>
+          <div class="sidebar-category">
+            <i class="material-icons">local_fire_department</i>
+            <span>Trending</span>
+          </div>
+          <div class="sidebar-category">
+            <i class="material-icons">subscriptions</i>
+            <span>Subcriptions</span>
+          </div>
+        </div>
+        <hr />
+        <div class="sidebar-categories">
+          <div class="sidebar-category">
+            <i class="material-icons">library_add_check</i>
+            <span>Library</span>
+          </div>
+          <div class="sidebar-category">
+            <i class="material-icons">history</i>
+            <span>History</span>
+          </div>
+          <div class="sidebar-category">
+            <i class="material-icons">play_arrow</i>
+            <span>Your Videos</span>
+          </div>
+          <div class="sidebar-category">
+            <i class="material-icons">watch_later</i>
+            <span>Watch Later</span>
+          </div>
+          <div class="sidebar-category">
+            <i class="material-icons">thumb_up</i>
+            <span>Liked Videos</span>
+          </div>
+        </div>
+        <hr/>
+      </div>
+      <!-- Sidebar Ends -->
+      
+      <!-- Video Section -->
+      <div class="player-section">
+        <div class="playing-video"><iframe width="1040" height="585" src="https://www.youtube.com/embed/XW1aGkzyjQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="playing-video-info">
+          <div class="video-title"><h3>Build Strength From Struggle | My Story</h3></div>
+          <div class="views-date"><p>121,400 views &bull; Mar 8, 2022</p></div>
+        </div>
+        <hr>
+        <div class="description">
+          <div class="profile"><img src="./img/traversy.jpg" alt="profile pic"></div>
+          <div class="chanel-name"><h4>Traversy Media</h4> <p class="subscriber-count">1.83M subscribers</p></div>
+          <div class="verified"><i class="material-icons">check_circle</i></div> 
+        </div>
+        <div class="description-text"><p>This is my own personal story that I like to share with the world to show that it's possible to get to places in your life that you couldn't even imagine. It's not easy, but it IS possible.</p></div>
+      </div>
+    </main>
 </body>
 </html>

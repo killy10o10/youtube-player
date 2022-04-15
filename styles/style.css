@@ -9,7 +9,8 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background: #e2e1e0;
+    /* background: #e2e1e0; */
+    background: #f9f9f9;
 }
 
 /* HEADER */
@@ -33,7 +34,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: auto;
+    overflow: hidden;
     
 }
 
@@ -92,10 +93,153 @@ a{
 #search-glass-button:hover {
     background-color: #e4e4e4;
 }
-
 /* END OF HEADER STYLING */
 
 
+main{
+    display: flex;
+}
+
+/* SIDEBAR */
+  
+  .sidebar {
+    height: 100%;
+    width: 230px;
+    background-color: white;
+    overflow-y: scroll;
+    margin-top: 1px;
+  }
+  
+  .sidebar-categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  .sidebar-category {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+  }
+  
+  .sidebar-category span {
+    margin-left: 15px;
+  }
+  
+  .sidebar-category:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+  }
+  
+  .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+  }
+  /* END OF SIDEBAR */
+
+
+  /* VIDEO SECTION */
+
+  .player-section{
+      display: flex;
+      flex-direction: column;
+      margin: 20px 25px 15px;
+      width: 100%;
+      height: 100%;   
+  }
+  .player-section hr{
+      height: 3px;
+      border-radius: 50%;
+      background-color: 1px solid rgb(0, 0, 0);
+
+  }
+
+  .playing-video iframe{
+      display: flex;
+      border-radius: 0px 0px 10px 10px;
+      max-width: 100%;    
+  }
+  .playing-video-info{
+      margin:  10px;
+  }
+
+  .views-date{
+      font-size: 14px;
+      color: #858181;
+      margin-top: 10px;
+  }
+
+  .description{
+      display: flex;
+      margin-top: 10px;
+  }
+
+  .description img{
+
+      width: 50px;
+      border-radius: 50%;
+  }
+
+  .chanel-name{  
+     margin: 13px 0 0 13px;
+  }
+
+  .verified i{
+      margin-top: 17px;
+      margin-left: 3px;
+      font-size: 14px;
+  }
+
+  .description-text{
+      overflow-wrap: break-word;
+      display: block;
+      margin-left: 60px;
+  }
+
+  .subscriber-count{
+    font-size: 12px;
+    color: #858181;
+    padding: 2px;
+  }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 550px) {
+    #search-box {
+      display: none;
+    }
+
+    #search-glass-button{
+        background: none;
+        border: none;
+    }
+
+    #search-glass-button:hover{
+        background-color: white;
+    }
+
+    #mic{
+        margin-left: 0;
+        background: none;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  }
+
+  @media (max-width:940px) {
+      #search-box{
+          width: 100%;
+      }
+  }
 
 
 
