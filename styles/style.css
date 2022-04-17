@@ -61,7 +61,7 @@ a{
   border-right: none;
   padding: 10px;
   height: 40px;
-  outline: none;
+  outline-color: #4285F4;
   font-size: 16px;
   
 }
