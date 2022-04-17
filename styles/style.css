@@ -115,7 +115,7 @@ main{
   }
 
   #sidebar.active {
-    left: 0px;  
+    left: 0px;
   }
   
   .sidebar-categories {
@@ -152,6 +152,14 @@ main{
   }
   /* END OF SIDEBAR */
 
+  .page-content{
+    display: flex;
+    transition: .3s ease-in-out;
+  }
+
+  .fade{
+    background-color: rgba(0, 0, 0, 0.4);
+  } 
 
   /* VIDEO SECTION */
 
